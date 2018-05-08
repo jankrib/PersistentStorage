@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package >
+    <metadata>
+    <id>PersistentStorage</id>
+    <version>0.1.1-alpha</version>
+    <title>PersistentStorage</title>
+    <authors>Jan Kristian Bjerke</authors>
+    <owners>Jan Kristian Bjerke</owners>
+    <projectUrl>https://github.com/jankrib/PersistentStorage</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Persistent storage for Xamarin apps</description>
+    <releaseNotes>First release</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>xamarin storage</tags>
+    <dependencies>
+    </dependencies>
+    </metadata>
+    <files>
+        <!-- Cross-platform reference assemblies -->
+        <file src="PersistentStorage.Core\bin\Release\netstandard2.0\PersistentStorage.Core.dll" target="lib\netstandard2.0\PersistentStorage.Core.dll" />
+
+        <!-- iOS reference assemblies -->
+        <file src="PersistentStorage.iOS\bin\Release\PersistentStorage.Core.dll" target="lib\Xamarin.iOS10\PersistentStorage.Core.dll" />
+        <file src="PersistentStorage.iOS\bin\Release\PersistentStorage.iOS.dll" target="lib\Xamarin.iOS10\PersistentStorage.iOS.dll" />
+
+        <!-- Android reference assemblies -->
+        <file src="PersistentStorage.Android\bin\Release\PersistentStorage.Core.dll" target="lib\MonoAndroid10\PersistentStorage.Core.dll" />
+        <file src="PersistentStorage.Android\bin\Release\PersistentStorage.Android.dll" target="lib\MonoAndroid10\PersistentStorage.Android.dll" />
+    </files>
+</package>
