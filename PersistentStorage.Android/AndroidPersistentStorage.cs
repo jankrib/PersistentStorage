@@ -11,11 +11,24 @@ namespace PersistentStorage.Android
 {
     public sealed class AndroidPersistentStorage:IPersistentStorage
     {
-        private readonly Context _context;
+        private static Context _context;
 
-        public AndroidPersistentStorage(Context context)
+        public static void SetContext(Context context)
         {
+            if (context == null)
+                throw new ArgumentNullException(nameof(context));
+
+            if (_context != null)
+                throw new InvalidOperationException($"{nameof(SetContext)} should only be called once");
+
             _context = context;
+        }
+
+        public AndroidPersistentStorage()
+        {
+            if(_context == null)
+                throw new InvalidOperationException($"{nameof(SetContext)} must be called before instantiating {nameof(AndroidPersistentStorage)}");
+            
         }
 
         public IPersistentStorageGroup GetGroup(string name)
