@@ -40,4 +40,4 @@ Retrieve a value
 
 ## Async/Await
 
-We all love async/await and hence these are provided in corresponding method names: PutAsync, GetAsync and DeleteAsync.
+PutAsync, GetAsync and DeleteAsync.
