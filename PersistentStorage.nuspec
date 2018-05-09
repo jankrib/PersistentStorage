@@ -2,7 +2,7 @@
 <package >
     <metadata>
     <id>PersistentStorage</id>
-    <version>0.1.3-alpha</version>
+    <version>0.1.4-alpha</version>
     <title>PersistentStorage</title>
     <authors>Jan Kristian Bjerke</authors>
     <owners>Jan Kristian Bjerke</owners>

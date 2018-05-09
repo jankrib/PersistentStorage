@@ -18,9 +18,6 @@ namespace PersistentStorage.Android
             if (context == null)
                 throw new ArgumentNullException(nameof(context));
 
-            if (_context != null)
-                throw new InvalidOperationException($"{nameof(SetContext)} should only be called once");
-
             _context = context;
         }
 
