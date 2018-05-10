@@ -12,6 +12,7 @@
     <releaseNotes>First release</releaseNotes>
     <copyright>Copyright 2018</copyright>
     <tags>xamarin storage</tags>
+    <iconUrl>https://github.com/jankrib/PersistentStorage/raw/master/icon.png</iconUrl>
     <dependencies>
     </dependencies>
     </metadata>
